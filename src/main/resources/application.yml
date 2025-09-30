@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: users
+  profiles:
+    active: "default"
+  datasource:
+    url: jdbc:mysql://localhost:3306/erp
+    username: root
+    password: Hitesh@123
+  config:
+    import: "optional:configserver:http://localhost:8071/"
+
+server:
+  port: 8081
